@@ -1,0 +1,43 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+    background: #23B123;
+    border-radius: rem(10);
+    padding: rem(21) rem(25);
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(22);
+    transition-duration: 0.5s;
+    @media (min-width:767px){
+        &:hover{
+            background-color: #0a5a0a;
+            border: 1px solid #FFFFFF;
+            transform: scale(1.05);
+        }
+    }
+    @media (max-width:900px){
+        padding: rem(10) rem(20);
+
+    }
+    @media (max-width:767px){
+        padding: rem(7) rem(15);
+
+    }
+  }
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(70);
+    line-height: 78px;
+    @include adaptiveClamp("font-size", 70, 55);
+}
+.text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: 180%;
+}
+span{
+    color: $greenColor;
+    cursor: pointer;
+}
